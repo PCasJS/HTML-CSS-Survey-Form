@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MN Disc Golf Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <h1 id="title"><b>MN Disc Golf Survey</b></h1>
+    <p id="description"><i>Please take the time to fill out this survey regarding disc golf in Minnesota</i><p>
+</header>
+<body>
+    <form id="survey-form">
+      <div>
+        <label for="name" id="name-label">Name</label><br>
+        <input name="name" id="name" type="text" placeholder="John Smith" required></input>
+      </div><br>
+      <div>
+        <label for="email" id="email-label">Email</label><br>
+        <input name="email" id="email" type="email" placeholder="discgolfer@gmail.com" required></input>
+      </div><br>    
+      <div>
+        <label for="number" id="number-label">Age</label><br>
+        <input name="age" id="number" type="number" min="1" max="120" placeholder="25"></input>
+      </div><br>    
+      <div>
+        <label for="dropdown">How many years have you been playing disc golf?</label><br>
+        <select name="list" id="dropdown">
+        <option>
+            0-1 years
+        </option>
+        <option>
+            1-2 years
+        </option>
+        <option>
+            2-5 years
+        </option>
+        <option>
+            More than 5 years
+        </option>
+        </select><br>
+      </div><br>
+      <div>
+        <div id="location-label">What part of MN do you live in?</div>
+        <input name="location" id="location" type="radio" value="Twin Cities Metro Area"><label for="location">Twin Cities Metro Area</label><br>
+        <input name="location" id="location" type="radio" value="Southeast MN"><label for="location">Southeast MN</label><br>
+        <input name="location" id="location" type="radio" value="Southwest MN"><label for="location">Southwest MN</label><br>
+        <input name="location" id="location" type="radio" value="Northeast MN"><label for="location">Northeast MN</label><br>
+        <input name="location" id="location" type="radio" value="Northwest MN"><label for="location">Northwest MN</label><br>
+      </div><br>
+      <div>
+        <div id="checkbox-label">What type of discs do you throw?</div>
+        <input name="discs" id="discs" type="checkbox" value="Innova"><label for="discs">Innova</label><br>
+        <input name="discs" id="discs" type="checkbox" value="Discraft"><label for="discs">Discraft</label><br>
+        <input name="discs" id="discs" type="checkbox" value="Dynamic"><label for="discs">Dynamic</label><br>
+        <input name="discs" id="discs" type="checkbox" value="Latitude 64"><label for="discs">Latitude 64</label><br>
+        <input name="discs" id="discs" type="checkbox" value="MVP"><label for="discs">MVP</label><br>
+        <input name="discs" id="discs" type="checkbox" value="Other"><label for="discs">Other brands</label><br>
+      </div><br>
+      <div>
+        <div id="commenttext">Please let us know how the courses or community could improve in MN (optional)</div>
+        <textarea name="comments" id="comments"rows="3" cols="25"></textarea><br>
+      </div>
+      <input name="submit" id="submit" type="submit">
+    </form>
+</body>
+</html>
